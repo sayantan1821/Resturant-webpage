@@ -4,7 +4,7 @@
 }
 .secA {
     background-color: #161616;
-    
+    /* position: relative; */
     height: 100vh;
     width: 100vw;
 }
@@ -47,7 +47,17 @@
 .img1 {
     height: 375.578px;
     width: 399.188px;
+    position: absolute;
+    right: 150px;
+    top: 300px;
+}
+.quote {
+    position: relative;
+    left: 200px;
+    top: 300px;
+    width: 300px;
 }
 .quote h1 {
     color: beige;
+    font-size: 3rem;
 }
