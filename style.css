@@ -49,15 +49,30 @@
     width: 399.188px;
     position: absolute;
     right: 150px;
-    top: 300px;
+    top: 35vh;
 }
 .quote {
     position: relative;
     left: 200px;
     top: 300px;
-    width: 300px;
+    width: 450px;
+    line-height: 400.2%;
 }
 .quote h1 {
     color: beige;
     font-size: 3rem;
+}
+.order {
+    /* background-color: #ff1616;
+    padding: 4%;
+    border-radius: 30%;
+    font-size: 150%;
+    color: aliceblue; */
+    padding: 4%;
+    background-color: transparent;
+    border: dotted #fff;
+    color: aliceblue;
+    margin-top: 5%;
+    border-radius: 55%;
+    font-size: 155%;
 }
