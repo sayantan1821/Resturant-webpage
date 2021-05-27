@@ -13,9 +13,6 @@
     height: 60px;
     width: 100%;
     display: flex;
-    /* flex-direction: row-reverse; */
-    /* justify-content: center; */
-    /* align-items: center; */
     align-items: center;
     position: fixed;
     z-index: 100;
@@ -65,11 +62,6 @@
     font-size: 3rem;
 }
 .order {
-    /* background-color: #ff1616;
-    padding: 4%;
-    border-radius: 30%;
-    font-size: 150%;
-    color: aliceblue; */
     padding: 4%;
     background-color: transparent;
     border: dotted #fff;
@@ -80,4 +72,5 @@
 }
 .menu {
     height: 100vh;
+    background-color: antiquewhite;
 }
