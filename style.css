@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    /* overflow-y: hidden; Hide vertical scrollbar */
+    /* overflow-x: hidden; Hide horizontal scrollbar */
+}
+*::-webkit-scrollbar {
+    display: none;
 }
 .secA {
     background-color: #161616;
@@ -26,6 +31,7 @@
     text-decoration: none;
     font-size: 20px;
     margin-left: 50px;
+    color: #fff;
 }
 .logo1 {
     height: 60px;
@@ -62,15 +68,76 @@
     font-size: 3rem;
 }
 .order {
-    padding: 4%;
+    padding: 2% 4%;
     background-color: transparent;
     border: dotted #fff;
     color: aliceblue;
-    margin-top: 5%;
-    border-radius: 55%;
+    margin-top: 10%;
+    /* border-radius: 55%; */
     font-size: 155%;
 }
 .menu {
     height: 100vh;
-    background-color: antiquewhite;
+    width: 100vw;
+    background-color: #f2f2f2;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.slider {
+    max-width: 1150px;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.slider .card {
+    background:#fff;
+    flex: 1;
+    margin: 0 10px;
+    /* max-width: 60%; */
+}
+.slider .card .img {
+    height: 200px;
+    /* width: 100%; */
+}
+.slider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} 
+.slider .card .content {
+    padding: 10px 20px;
+    /* max-width: 500px; */
+}
+.card .content .title {
+    font-size: 25px;
+    font-weight: 600;
+}
+.sub-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #94908f;
+    line-height: 20px;
+}
+.card .content p {
+    text-align: justify;
+    margin: 10px 0;
+    
+}
+.card .btn button {
+    background: #fa7474;
+    color: #fff;
+    margin-bottom: 1%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.card .btn button:hover {
+    transform: scale(1.1);
+    background: #ff0404;
 }

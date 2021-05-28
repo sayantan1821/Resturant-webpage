@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script> src="https://code.jquery.com/jquery-3.6.0.js"</script>
+    <Script> src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"</Script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
-    <style>
-        a {
-            color: aliceblue;
-        }
-    </style>
 </head>
 <body>
     <div>
@@ -36,12 +35,84 @@
         </div>
     </div>
     <div class="menu">
-        Discover a new taste
-        <div class="menu-img">
+        <h1>Discover a new taste</h3>
+        <div class="slider owl-carousel">
+            <div class="card">
+                <div class="img"><img src="asserts/unknown.png" alt='pic1'></div>
+                <div class="content">
+                    <div class="title">asdjbnjkl</div>
+                    <div class="sub-title">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat cum doloribus sed reiciendis dignissimos aperiam!</p>
+                </div>
+                </div>
+                <div class="btn">
+                    <button>order</button>
+                </div>
+            </div>
 
+            <div class="card">
+                <div class="img"><img src="asserts/unknown.png" alt='pic1'></div>
+                <div class="content">
+                    <div class="title">asdjbnjkl</div>
+                    <div class="sub-title">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque possimus quibusdam ratione molestiae ea reiciendis?</p>
+                </div>
+                </div>
+                <div class="btn">
+                    <button>order</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="asserts/unknown.png" alt='pic1'></div>
+                <div class="content">
+                    <div class="title">asdjbnjkl</div>
+                    <div class="sub-title">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi maiores quia voluptatem amet provident adipisci quasi!</p>
+                </div>
+                </div>
+                <div class="btn">
+                    <button>order</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="./asserts/unknown.png" alt='pic1'></div>
+                <div class="content">
+                    <div class="title">asdjbnjkl</div>
+                    <div class="sub-title">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, atque eveniet delectus possimus deleniti repudiandae illo?</p>
+                </div>
+                </div>
+                <div class="btn">
+                    <button>order</button>
+                </div>
+            </div>
         </div>
         <button>Explore our menu</button>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        
+        lazyLoad:true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+    </script>
 </body>
 </html>
