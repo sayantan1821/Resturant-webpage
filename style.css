@@ -172,3 +172,25 @@
     transform: scale(1.1);
     background: #ff0404;
 }
+.explore-btn {
+    color: #94908f;
+    border: 2px solid #ff0404;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    /* font-family: "Lucida Console", Monaco, monospace; */
+    font-size: 24px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #ff0404;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    position: relative;
+    left: 40%;
+    /* bottom: 25%; */
+} 
+.explore-btn:hover {
+    box-shadow: inset 400px 0 0 0 #ff0404;
+    color: #fff;
+}
