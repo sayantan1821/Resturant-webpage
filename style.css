@@ -76,25 +76,56 @@
     /* border-radius: 55%; */
     font-size: 155%;
 }
+.order:hover {
+    background-color: #fff;
+    color: #161616;
+    transition: 0.2s;
+}
 .menu {
     height: 100vh;
     width: 100vw;
-    background-color: #f2f2f2;
+    position: relative;
+    background-size: cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;              
     display: grid;
     place-items: center;
     text-align: center;
 }
-
+.menu-bg {
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 3.8rem;
+    background-image: url(asserts/unknown.png);
+    background-size: cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+}
+.menu h1 {
+    font-size: 4rem;
+    position: relative;
+    left: -15.5%;
+    top: 25%;
+    z-index: 100;
+    text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+}
 .slider {
     max-width: 1150px;
     display: flex;
     width: 100vw;
     justify-content: center;
+    z-index: 100;
+    
 }
 .slider .card {
     background:#fff;
     flex: 1;
     margin: 0 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
     /* max-width: 60%; */
 }
 .slider .card .img {
@@ -118,7 +149,7 @@
     font-size: 25px;
     font-weight: 600;
     color: #94908f;
-    line-height: 20px;
+    line-height: 30px;
 }
 .card .content p {
     text-align: justify;
