@@ -194,3 +194,8 @@
     box-shadow: inset 400px 0 0 0 #ff0404;
     color: #fff;
 }
+.table {
+    height: 70vh;
+    width: 100vw;
+    background-color: #fff;
+}
